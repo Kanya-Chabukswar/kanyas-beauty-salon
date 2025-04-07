@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanya’s Beauty Salon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container">
+        <img src="logo.png" alt="Salon Logo" class="logo" />
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button onclick="toggleLanguage()">मराठी ⇄ English</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1 id="hero-title">✨ Kanya’s Beauty Salon ✨</h1>
+        <p id="hero-tagline">Where Elegance Meets Excellence</p>
+      </div>
+    </section>
+    <section id="about" class="section">
+      <h2 id="about-title">Welcome</h2>
+      <p id="about-text">
+        Welcome to Kanya’s Beauty Salon!
+        We're so glad you're here. Step into a space where beauty meets care and elegance. Whether you're preparing for a special day or just need a little pampering, our expert team is here to make you feel confident, refreshed, and radiant.
+        Thank you for choosing us — your beauty is our passion!
+        Kanya’s Beauty Salon is your go-to destination for timeless beauty and
+        personalized care in Solapur.
+      </p>
+    </section>
+    <section id="services" class="section">
+      <h2 id="services-title">💄 Our Services</h2>
+      <ul id="services-list">
+        <li>Bridal & Party Makeup</li>
+        <li>Haircuts, Styling & Color</li>
+        <li>Facials & Skin Treatments</li>
+        <li>Mehndi (Henna) Art</li>
+        <li>Manicure & Pedicure</li>
+        <li>Threading & Waxing</li>
+        <li>Saree Draping & More</li>
+      </ul>
+    </section>
+    <section id="gallery" class="section">
+      <h2>📸 Our Work</h2>
+      <div class="gallery-grid">
+        <img src="Bride Look.jpg" alt="Work 1" />
+        <img src="Facial.jpg" alt="Work 2" />
+        <img src="hair.jpg" alt="Work 3" />
+      </div>
+    </section>
+    <section id="testimonials" class="section">
+      <h2>🌟 Testimonials</h2>
+      <blockquote>
+        "I felt like a queen on my wedding day – thank you Kanya’s!" – Priya
+      </blockquote>
+      <blockquote>
+        "The facial and mehndi were amazing, highly recommended!" – Sneha
+      </blockquote>
+    </section>
+    <section id="faq" class="section">
+      <h2>❓ Frequently Asked Questions</h2>
+      <details>
+        <summary>What are your working hours?</summary>
+        <p>We’re open 10 AM – 8 PM every day except Mondays.</p>
+      </details>
+      <details>
+        <summary>Do you offer bridal packages?</summary>
+        <p>Yes! We have customizable bridal and pre-bridal packages.</p>
+      </details>
+    </section>
+    <section id="contact" class="section">
+      <h2>📞 Contact Us</h2>
+      <p>Phone: <a href="tel:+919096367755">+91 90963 67755 </a></p>
+      <p>
+        Instagram:
+        <a href="https://instagram.com/kanyasbeautysalon" target="blank"
+          >@kanyasbeautysalon</a
+        >
+      </p>
+      <form onsubmit="sendWhatsApp(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="text" placeholder="Your Message" required />
+        <button type="submit">Send via WhatsApp</button>
+      </form>
+    </section>
+    <footer class="site-footer">
+      <p>&copy; 2025 Kanya’s Beauty Salon | ❤️</p>
+    </footer>
+  </body>
+</html>
